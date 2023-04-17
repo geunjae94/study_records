@@ -25,11 +25,13 @@ class CodeTest {
         //<T> : 내부적으로 객체의 참조형으로 처리
 
 
-        List<Integer> integerList2 = Arrays.asList(new Integer[]{new Integer(1),2,3});
-        ArrayList<Integer> arrayList2 = new ArrayList<>(integerList2);
-        //Object[] elementData에 파라미터내의 값 배열로 변경후 얕은 복사
-        //생성자의 파라미터로 지정되는 제네릭 타입이 ArrayList의 제네릭타입으로 지정됨
+        int[] ints2 = new int[]{1,2,1,2,3,1,3,1};
+        Integer[] integers3 = Arrays.stream(ints2).boxed().toArray(Integer[]::new); //여기서 깊은 복사, 따라서 int[]배열 값을 변경해도 하위 고정된 ArrayList에서 안바뀌어 있다
+        List<Integer> integerList2 = Arrays.asList(integers3); //얕은 복사
+        ArrayList<Integer> arrayList2 = new ArrayList<>(integerList2); //깊은 복사
+        //생성자의 파라미터내의 element 배열 값을 ArrayList내부 Object[] elementData로 깊은 복사
         //
+        //생성자의 파라미터로 지정되는 제네릭 타입이 ArrayList의 제네릭타입으로 지정됨
         //public E get(int index) {
         //        Objects.checkIndex(index, size);
         //        return elementData(index);
@@ -38,7 +40,6 @@ class CodeTest {
         //E elementData(int index) {
         //    return (E) elementData[index];
         //}
-        //
         //의 이유들로 인해
 
 
