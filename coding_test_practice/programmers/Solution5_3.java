@@ -1,7 +1,9 @@
 package solution;
 
-// Level 1 햄버거 만들기 - 배열, 문자열 사용
-public class Solution5_3 {
+// level 1 햄버거 만들기 - 배열, 문자열 사용
+class Solution5_3 {
+    // 참고: StringBuffer
+
     // 문제점:
     //500000개 이상의 배열의 요소가 있을시 시간 복잡도
     //점점 많은 양의 데이터를 가진 새로운 String객체를 만드는 것이 문제
@@ -10,7 +12,7 @@ public class Solution5_3 {
     //최종해결: buffer의 일부분만 자른 배열 값의 String객체를 만들어 이용
     //StringBuffer -> .subSequence(CharSequence) -> String
 
-    public int solution(int[] ingredient) {
+    int solution(int[] ingredient) {
         StringBuffer buffer = new StringBuffer();
         int answer = 0;
         int index = 0;
