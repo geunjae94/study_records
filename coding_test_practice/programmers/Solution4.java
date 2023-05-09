@@ -4,20 +4,21 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-// Level 1 기사단원의 무기
+// level 1 기사단원의 무기
 class Solution4 {
+    // 요약:
+    //1 ~ number에 해당하는 숫자까지의 약수의 개수를 구한뒤 모두 합한 결과 구하기
 
-    public int solution(int number, int limit, int power) {
-        // 요약:
-        //1 ~ number에 해당하는 숫자까지의 약수의 개수를 구한뒤 모두 합한 결과 구하기
+    // 알고리즘:
+    //1. 지정된 숫자의 제곱근 까지 나누어 떨어지는 수들의 개수 Count
+    //2. 구한 나누어 떨어지는 수들을 지정된 숫자와 나누어 나오는 값중 중복되지 않은 값만 Count
 
-        // 알고리즘:
-        //1. 지정된 숫자의 제곱근 까지 나누어 떨어지는 수들의 개수 Count
-        //2. 구한 나누어 떨어지는 수들을 지정된 숫자와 나누어 나오는 값중 중복되지 않은 값만 Count
+    // 참고: HashSet<> -> iterator<>
 
-        // 문제점:
-        //expectedModCount != modCount(서로 불일치 문제) - ConcurrentModificationException 발생 에 관한
+    // 문제점:
+    //expectedModCount != modCount(서로 불일치 문제) - ConcurrentModificationException 발생 에 관한
 
+    int solution(int number, int limit, int power) {
         int answer = 0;
         int[] ints = new int[number];
         Set<Integer> integers = new HashSet<>();
