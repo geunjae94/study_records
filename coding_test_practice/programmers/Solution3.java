@@ -7,7 +7,7 @@ import java.util.Collections;
 class Solution3 {
     // 참고: int[] -> ...(내림차순 정렬) -> Integer[]
     
-    int solution(int k, int m, int[] score) {
+    public int solution(int k, int m, int[] score) {
         /*IntStream stream = Arrays.stream(score);
         Stream<Integer> boxed = stream.boxed();*/
 
