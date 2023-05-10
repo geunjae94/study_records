@@ -12,7 +12,7 @@ class Solution5_3 {
     //최종해결: buffer의 일부분만 자른 배열 값의 String객체를 만들어 이용
     //StringBuffer -> .subSequence(CharSequence) -> String
 
-    int solution(int[] ingredient) {
+    public int solution(int[] ingredient) {
         StringBuffer buffer = new StringBuffer();
         int answer = 0;
         int index = 0;
