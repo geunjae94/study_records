@@ -18,7 +18,7 @@ class Solution4 {
     // 문제점:
     //expectedModCount != modCount(서로 불일치 문제) - ConcurrentModificationException 발생 에 관한
 
-    int solution(int number, int limit, int power) {
+    public int solution(int number, int limit, int power) {
         int answer = 0;
         int[] ints = new int[number];
         Set<Integer> integers = new HashSet<>();
