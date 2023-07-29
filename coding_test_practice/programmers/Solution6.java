@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 // level 1 성격 유형 검사하기_2022 KAKAO TECH INTERNSHIP
 class Solution6 {
-    // 참고: LinkedHashMap<>, StringBuffer, ~~stream().toArray(String[]::new), Char -> ASCII
+    // 참고 가능한: LinkedHashMap<>, StringBuffer, ~~stream().toArray(String[]::new), Char -> ASCII
 
     //ex)
     /*
