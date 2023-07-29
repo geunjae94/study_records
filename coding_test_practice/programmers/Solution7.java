@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 // level 1 신고 결과 받기_2022 KAKAO BLIND RECRUITMENT
 class Solution7 {
-    // 참고: Map<String, List<String>>, new LinkedHashMap<>(), ~~.mapToInt(Integer::intValue), ~~.boxed().toArray(Integer[]::new)
+    // 참고 가능한: Map<String, List<String>>, new LinkedHashMap<>(), ~~.mapToInt(Integer::intValue), ~~.boxed().toArray(Integer[]::new)
 
     public int[] solution(String[] id_list, String[] report, int k) {
 
