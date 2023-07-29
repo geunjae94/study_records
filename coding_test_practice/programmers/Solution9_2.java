@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 // level 2 이모티콘 할인행사_2023 KAKAO BLIND RECRUITMENT
 public class Solution9_2 {
-    // 참고: brute force 알고리즘, 2차원 배열의 정렬
+    // 참고 가능한: brute force 알고리즘, 2차원 배열의 정렬(   ex) Arrays.sort(resultArr, new Comparator<int[]>() {})  )
 
     public static void main(String[] args) {
         int[][] ints = {{40, 2900}, {23, 10000}, {11, 5200}, {5, 5900},
@@ -168,7 +168,7 @@ public class Solution9_2 {
             @Override
             public int compare(int[] o1, int[] o2) {
                 //return o1[0]-o2[0];
-                return o1[0] != o2[0] ? o2[0] - o1[0] : o2[1] - o1[1];
+                return o1[0] != o2[0] ? o2[0] - o1[0] : o2[1] - o1[1]; //두 배열의 순서, 연산 결과값(양수, 음수)에 따라 정렬된다.
             }
         });*/
         Arrays.sort(resultArr, (o1, o2) -> o1[0]!=o2[0] ? o2[0]-o1[0] : o2[1]-o1[1]);
