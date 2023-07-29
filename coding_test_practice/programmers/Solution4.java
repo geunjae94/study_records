@@ -13,7 +13,7 @@ class Solution4 {
     //1. 지정된 숫자의 제곱근 까지 나누어 떨어지는 수들의 개수 Count
     //2. 구한 나누어 떨어지는 수들을 지정된 숫자와 나누어 나오는 값중 중복되지 않은 값만 Count
 
-    // 참고: HashSet<> -> iterator<>
+    // 참고 가능한: HashSet<> -> iterator<>
 
     // 문제점:
     //expectedModCount != modCount(서로 불일치 문제) - ConcurrentModificationException 발생 에 관한
