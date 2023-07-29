@@ -2,7 +2,7 @@ package solution;
 
 // level 1 햄버거 만들기 - 배열, 문자열 사용
 class Solution5_3 {
-    // 참고: StringBuffer
+    // 참고 가능한: StringBuffer
 
     // 문제점:
     //500000개 이상의 배열의 요소가 있을시 시간 복잡도
