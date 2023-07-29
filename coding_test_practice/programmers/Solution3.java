@@ -5,7 +5,7 @@ import java.util.Collections;
 
 // level 1 과일 장수(최종)
 class Solution3 {
-    // 참고: int[] -> ...(내림차순 정렬) -> Integer[]
+    // 참고 가능한: int[] -> ...(내림차순 정렬) -> Integer[]
     
     public int solution(int k, int m, int[] score) {
         /*IntStream stream = Arrays.stream(score);
